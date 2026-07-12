@@ -1,13 +1,12 @@
 // src/pages/AboutPage.jsx
 export default function AboutPage() {
   return (
-    <div className="w-full h-full flex items-center justify-center px-10 bg-white dark:bg-gray-900">
+    <div className="w-full h-full flex items-center justify-center px-20 bg-white dark:bg-gray-900">
       <div className="max-w-lg w-full">
         <p className="text-violet-500 text-xs font-mono tracking-widest uppercase mb-2">Page 02</p>
         <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-6">About Me</h2>
         <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
           <p>
-            {/* REPLACE: your own bio */}
             3rd year BCA student at Inspiria Knowledge Campus, Siliguri — under MAKAUT.
             I build full-stack web applications, organize technical events, and write code
             that actually ships.
