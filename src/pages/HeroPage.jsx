@@ -39,11 +39,11 @@ export default function HeroPage() {
         transition={{ delay: 0.4 }}
       >
         <a
-          href="/resume.pdf"
+          href="/RudrakshPradhan_Resume.pdf"
           download = "RudrakshPradhan_Resume.pdf"
           className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-colors"
         >
-          <FiDownload size={15} /> Download CV
+          <FiDownload size={15} /> Download Resume
         </a>
         <a
           href="https://github.com/rudraacodes"
