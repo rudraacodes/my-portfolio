@@ -1,20 +1,27 @@
 // src/pages/AboutPage.jsx
 export default function AboutPage() {
   return (
-    <div className="w-full h-screen flex items-center justify-center px-20 bg-white dark:bg-gray-900">
+    <div className="w-full min-h-screen h-screen overflow-hidden flex items-center justify-center px-6 md:px-12 lg:px-20 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-lg w-full">
-        <p className="text-violet-500 text-xs font-mono tracking-widest uppercase mb-2">Page 02</p>
-        <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-6">About Me</h2>
-        <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+        {/* Header Section */}
+        <p className="text-violet-500 text-[10px] md:text-xs font-mono tracking-widest uppercase mb-2">
+          Page 02
+        </p>
+        <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white mb-4 md:mb-6">
+          About Me
+        </h2>
+
+        {/* Text Content - Adjusted leading and text size for smaller screens */}
+        <div className="space-y-3 md:space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed text-xs md:text-sm">
           <p>
             3rd year BCA student at Inspiria Knowledge Campus, Siliguri — under MAKAUT.
             I build full-stack web applications, organize technical events, and write code
             that actually ships.
           </p>
-          <p>
+          <p className="hidden sm:block">
             My academic work spans Data Structures, DBMS, and Systems Programming. Outside
             the classroom I have completed a web developer internship at TIEEDI and led
-            events like BugHunter and Dataviz for Insvaganza 2026.
+            events like BugHunter and Dataviz.
           </p>
           <p>
             Currently focused on landing a web developer role while building my open-source
@@ -22,21 +29,21 @@ export default function AboutPage() {
           </p>
         </div>
 
-        {/* Quick facts */}
-        <div className="mt-8 grid grid-cols-2 gap-4">
+        {/* Quick facts - Grid collapses on mobile */}
+        <div className="mt-6 md:mt-8 grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
           {[
             { label: 'Degree',    value: 'BCA (Final Year)' },
             { label: 'Institute', value: 'Inspiria, Siliguri' },
             { label: 'University', value: 'MAKAUT' },
             { label: 'Open To',   value: 'Internships / Full-Time' },
           ].map((item) => (
-            <div key={item.label} className="bg-gray-50 dark:bg-gray-800 rounded-xl p-4">
-              <p className="text-xs text-gray-400 dark:text-gray-500 mb-1">{item.label}</p>
-              <p className="text-sm font-semibold text-gray-800 dark:text-white">{item.value}</p>
+            <div key={item.label} className="bg-gray-50 dark:bg-gray-800/50 rounded-xl p-3 md:p-4 border border-gray-100 dark:border-gray-800">
+              <p className="text-[10px] text-gray-400 dark:text-gray-500 mb-0.5 md:mb-1 uppercase tracking-tighter">{item.label}</p>
+              <p className="text-xs md:text-sm font-semibold text-gray-800 dark:text-white truncate">{item.value}</p>
             </div>
           ))}
         </div>
       </div>
     </div>
-  )
+  );
 }
