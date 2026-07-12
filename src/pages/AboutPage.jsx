@@ -1,7 +1,7 @@
 // src/pages/AboutPage.jsx
 export default function AboutPage() {
   return (
-    <div className="w-screen h-screen overflow-hidden flex items-center justify-center px-20 bg-white dark:bg-gray-900">
+    <div className="w-full h-screen flex items-center justify-center px-20 bg-white dark:bg-gray-900">
       <div className="max-w-lg w-full">
         <p className="text-violet-500 text-xs font-mono tracking-widest uppercase mb-2">Page 02</p>
         <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-6">About Me</h2>
