@@ -40,7 +40,7 @@ export default function HeroPage() {
       >
         <a
           href="/resume.pdf"
-          download
+          download = "RudrakshPradhan_Resume.pdf"
           className="flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-colors"
         >
           <FiDownload size={15} /> Download CV
